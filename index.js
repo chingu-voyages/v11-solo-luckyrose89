@@ -31,6 +31,12 @@ app.use(
   })
 );
 
+// app demo
+app.get("/", (req, res) => {
+  res.status(200);
+  res.send("Welcome to flashnotes");
+});
+
 //Error handling middleware
 app.get("*", (req, res) => {
   res.status(404);
